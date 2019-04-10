@@ -11,7 +11,7 @@ const server = require('http').Server(app)
 const io = require('socket.io')(server)
 
 // configurando CORS
-app.use(cors)
+app.use(cors())
 
 //cria as rotas de socket
 io.on('connection', socket => {
