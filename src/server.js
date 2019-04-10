@@ -42,4 +42,4 @@ app.use('/files', express.static(path.resolve(__dirname, '..', 'temp')))
 app.use(require('./routes'))
 
 // roda app na porta 3333 com o scocket.io
-server.listen(3333)
+server.listen(process.env.PORT || 3333)
